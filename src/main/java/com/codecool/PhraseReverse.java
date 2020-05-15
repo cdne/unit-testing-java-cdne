@@ -21,10 +21,7 @@ public class PhraseReverse {
     }
 
     public static String reverseN(String str, int n){
-        StringBuilder sb = new StringBuilder(str.substring(0, n));
-        sb.reverse();
-        sb.append(str.substring(n, str.length()));
-        return sb.toString();
+        return reverse(str.substring(0, n)) + str.substring(n);
     }
 
     // helper functions but test these too
